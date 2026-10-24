@@ -1,0 +1,114 @@
+== idle (exit 0): llvmpipe (LLVM 20.1.2, 256 bits)
+   ANIM_CAPTURE state=idle frames=96
+DETECTOR PASS idle: 96 frames, all non-empty, min colours per frame 2060
+   assembled contact_idle.png (244078 bytes, 1 frame(s))
+   assembled idle.gif (614926 bytes, 48 frame(s))
+== walk (exit 0): llvmpipe (LLVM 20.1.2, 256 bits)
+   ANIM_CAPTURE state=walk frames=72
+   ANIM_EVENT t=0.000 WALK 5.0 m/s
+DETECTOR PASS walk: 72 frames, all non-empty, min colours per frame 1852
+   assembled contact_walk.png (363253 bytes, 1 frame(s))
+   assembled walk.gif (444435 bytes, 36 frame(s))
+== sprint (exit 0): llvmpipe (LLVM 20.1.2, 256 bits)
+   ANIM_CAPTURE state=sprint frames=72
+   ANIM_EVENT t=0.000 SPRINT 7.2 m/s
+DETECTOR PASS sprint: 72 frames, all non-empty, min colours per frame 1803
+   assembled contact_sprint.png (411429 bytes, 1 frame(s))
+   assembled sprint.gif (442716 bytes, 36 frame(s))
+== crouch (exit 0): llvmpipe (LLVM 20.1.2, 256 bits)
+   ANIM_CAPTURE state=crouch frames=96
+   ANIM_EVENT t=0.000 CROUCH idle
+   ANIM_EVENT t=0.500 CROUCH walk 2.6 m/s
+DETECTOR PASS crouch: 96 frames, all non-empty, min colours per frame 1790
+   assembled contact_crouch.png (364966 bytes, 1 frame(s))
+   assembled crouch.gif (566291 bytes, 48 frame(s))
+== slide (exit 0): llvmpipe (LLVM 20.1.2, 256 bits)
+   ANIM_CAPTURE state=slide frames=84
+   ANIM_EVENT t=0.300 SLIDE 9.0 -> 2.6 m/s over 0.9 s
+   ANIM_EVENT t=1.200 CROUCH 2.6 m/s
+DETECTOR PASS slide: 84 frames, all non-empty, min colours per frame 1815
+   assembled contact_slide.png (402570 bytes, 1 frame(s))
+   assembled slide.gif (495717 bytes, 42 frame(s))
+== jump_land (exit 0): llvmpipe (LLVM 20.1.2, 256 bits)
+   ANIM_CAPTURE state=jump_land frames=84
+   ANIM_EVENT t=0.250 JUMP 6.3 m/s (apex 1.1 m)
+   ANIM_EVENT t=0.900 land impact 7.3 m/s
+DETECTOR PASS jump_land: 84 frames, all non-empty, min colours per frame 1924
+   assembled contact_jump_land.png (402561 bytes, 1 frame(s))
+   assembled jump_land.gif (510088 bytes, 42 frame(s))
+== aim (exit 0): llvmpipe (LLVM 20.1.2, 256 bits)
+   ANIM_CAPTURE state=aim frames=84
+   ANIM_EVENT t=0.200 ADS on
+   ANIM_EVENT t=1.000 ADS off
+DETECTOR PASS aim: 84 frames, all non-empty, min colours per frame 1909
+   assembled contact_aim.png (247466 bytes, 1 frame(s))
+   assembled aim.gif (530834 bytes, 42 frame(s))
+== fire (exit 0): llvmpipe (LLVM 20.1.2, 256 bits)
+   ANIM_CAPTURE state=fire frames=96
+   ANIM_EVENT t=0.250 FIRED slot 0
+   ANIM_EVENT t=0.350 FIRED slot 0
+   ANIM_EVENT t=0.450 FIRED slot 0
+   ANIM_EVENT t=0.550 FIRED slot 0
+   ANIM_EVENT t=0.650 FIRED slot 0
+   ANIM_EVENT t=0.750 FIRED slot 0
+   ANIM_EVENT t=1.050 FIRED slot 1
+DETECTOR PASS fire: 96 frames, all non-empty, min colours per frame 1892
+   assembled contact_fire.png (250780 bytes, 1 frame(s))
+   assembled fire.gif (602161 bytes, 48 frame(s))
+== reload (exit 0): llvmpipe (LLVM 20.1.2, 256 bits)
+   ANIM_CAPTURE state=reload frames=132
+   ANIM_EVENT t=0.200 RELOAD_START slot 0
+   ANIM_EVENT t=2.000 RELOAD_DONE slot 0
+DETECTOR PASS reload: 132 frames, all non-empty, min colours per frame 2015
+   assembled contact_reload.png (218355 bytes, 1 frame(s))
+   assembled reload.gif (828094 bytes, 66 frame(s))
+== switch (exit 0): llvmpipe (LLVM 20.1.2, 256 bits)
+   ANIM_CAPTURE state=switch frames=84
+   ANIM_EVENT t=0.150 SWITCH_START slot 1
+   ANIM_EVENT t=0.650 SWITCH_DONE slot 1
+   ANIM_EVENT t=0.850 SWITCH_START slot 0
+   ANIM_EVENT t=1.250 SWITCH_DONE slot 0
+DETECTOR PASS switch: 84 frames, all non-empty, min colours per frame 1998
+   assembled contact_switch.png (249668 bytes, 1 frame(s))
+   assembled switch.gif (528947 bytes, 42 frame(s))
+== hard_wake (exit 0): llvmpipe (LLVM 20.1.2, 256 bits)
+   ANIM_CAPTURE state=hard_wake frames=108
+   ANIM_EVENT t=0.300 HARD_WAKE
+DETECTOR PASS hard_wake: 108 frames, all non-empty, min colours per frame 1696
+   assembled contact_hard_wake.png (272904 bytes, 1 frame(s))
+   assembled hard_wake.gif (640179 bytes, 54 frame(s))
+== fp_aim (exit 0): llvmpipe (LLVM 20.1.2, 256 bits)
+   ANIM_CAPTURE state=fp_aim frames=72
+   ANIM_EVENT t=0.200 ADS on
+   ANIM_EVENT t=1.000 ADS off
+DETECTOR PASS fp_aim: 72 frames, all non-empty, min colours per frame 1007
+   assembled contact_fp_aim.png (330767 bytes, 1 frame(s))
+   assembled fp_aim.gif (459373 bytes, 36 frame(s))
+== fp_fire (exit 0): llvmpipe (LLVM 20.1.2, 256 bits)
+   ANIM_CAPTURE state=fp_fire frames=72
+   ANIM_EVENT t=0.250 FIRED slot 0
+   ANIM_EVENT t=0.350 FIRED slot 0
+   ANIM_EVENT t=0.450 FIRED slot 0
+   ANIM_EVENT t=0.550 FIRED slot 0
+   ANIM_EVENT t=0.650 FIRED slot 0
+   ANIM_EVENT t=0.750 FIRED slot 0
+DETECTOR PASS fp_fire: 72 frames, all non-empty, min colours per frame 966
+   assembled contact_fp_fire.png (310973 bytes, 1 frame(s))
+   assembled fp_fire.gif (429540 bytes, 36 frame(s))
+== fp_reload (exit 0): llvmpipe (LLVM 20.1.2, 256 bits)
+   ANIM_CAPTURE state=fp_reload frames=132
+   ANIM_EVENT t=0.200 RELOAD_START slot 0
+   ANIM_EVENT t=2.000 RELOAD_DONE slot 0
+DETECTOR PASS fp_reload: 132 frames, all non-empty, min colours per frame 1432
+   assembled contact_fp_reload.png (317343 bytes, 1 frame(s))
+   assembled fp_reload.gif (796035 bytes, 66 frame(s))
+== fp_switch (exit 0): llvmpipe (LLVM 20.1.2, 256 bits)
+   ANIM_CAPTURE state=fp_switch frames=72
+   ANIM_EVENT t=0.150 SWITCH_START slot 1
+   ANIM_EVENT t=0.650 SWITCH_DONE slot 1
+DETECTOR PASS fp_switch: 72 frames, all non-empty, min colours per frame 983
+   assembled contact_fp_switch.png (266634 bytes, 1 frame(s))
+   assembled fp_switch.gif (482039 bytes, 36 frame(s))
+combined sheet: contact_all_states.png (6960x5576)
+rendered frames checked: 1356
+ANIM CAPTURES: PASS

@@ -1,0 +1,206 @@
+== run tt_echo_base (exit 0): llvmpipe (LLVM 20.1.2, 256 bits)
+DETECTOR PASS echo_base@a000: turntable_echo_base_a000.png colours=2487 bytes=78584
+    EMBLEM CHECK echo_base@a000 chest: core n=253 median=#FFB23F (hue 35.9, S 0.75, V 1.00) in-tolerance 100% | surround n=384 median=#444E67 contrast 4.62:1 (min 3.0), dV 0.60 -> PASS
+    EMBLEM CHECK echo_base@a000 shoulder: facing -0.06 < 0.3 (edge-on), not checked
+    EMBLEM CHECK: PASS (look=echo_base@a000, 2/2 emblems)
+DETECTOR PASS echo_base@a045: turntable_echo_base_a045.png colours=2309 bytes=81990
+    EMBLEM CHECK echo_base@a045 chest: core n=253 median=#FFB23F (hue 35.9, S 0.75, V 1.00) in-tolerance 100% | surround n=365 median=#465164 contrast 4.46:1 (min 3.0), dV 0.61 -> PASS
+    EMBLEM CHECK echo_base@a045 shoulder: facing -0.73 < 0.3 (edge-on), not checked
+    EMBLEM CHECK: PASS (look=echo_base@a045, 2/2 emblems)
+DETECTOR PASS echo_base@a090: turntable_echo_base_a090.png colours=1498 bytes=55394
+DETECTOR PASS echo_base@a135: turntable_echo_base_a135.png colours=1786 bytes=75501
+DETECTOR PASS echo_base@a180: turntable_echo_base_a180.png colours=1621 bytes=71556
+DETECTOR PASS echo_base@a225: turntable_echo_base_a225.png colours=2261 bytes=80500
+DETECTOR PASS echo_base@a270: turntable_echo_base_a270.png colours=2301 bytes=58620
+    EMBLEM CHECK echo_base@a270 chest: facing -0.03 < 0.3 (edge-on), not checked
+    EMBLEM CHECK echo_base@a270 shoulder: core n=253 median=#FFB23F (hue 35.9, S 0.75, V 1.00) in-tolerance 100% | surround n=384 median=#444D64 contrast 4.69:1 (min 3.0), dV 0.61 -> PASS
+    EMBLEM CHECK: PASS (look=echo_base@a270, 2/2 emblems)
+DETECTOR PASS echo_base@a315: turntable_echo_base_a315.png colours=2986 bytes=81608
+    EMBLEM CHECK echo_base@a315 chest: core n=253 median=#FFB23F (hue 35.9, S 0.75, V 1.00) in-tolerance 100% | surround n=380 median=#2D364A contrast 6.73:1 (min 3.0), dV 0.71 -> PASS
+    EMBLEM CHECK echo_base@a315 shoulder: core n=253 median=#FFB23F (hue 35.9, S 0.75, V 1.00) in-tolerance 100% | surround n=281 median=#4B5561 contrast 4.22:1 (min 3.0), dV 0.62 -> PASS
+    EMBLEM CHECK: PASS (look=echo_base@a315, 2/2 emblems)
+DETECTOR PASS contact echo_base: contact_echo_base.png colours=6111 bytes=525494
+== run far_echo_base (exit 0): llvmpipe (LLVM 20.1.2, 256 bits)
+DETECTOR PASS echo_base@far1080: far40m_echo_base_1080p.png colours=346 bytes=37228
+DETECTOR PASS echo_base@far: far40m_echo_base_648p.png colours=209 bytes=19835
+    EMBLEM CHECK echo_base@far1080 chest: core n=253 median=#FFB23F (hue 35.9, S 0.75, V 1.00) in-tolerance 89% | surround n=232 median=#444E5F contrast 4.68:1 (min 3.0), dV 0.63 -> FAIL
+    EMBLEM CHECK echo_base@far1080 shoulder: core n=253 median=#EEA740 (hue 35.5, S 0.73, V 0.93) in-tolerance 72% | surround n=264 median=#3D4853 contrast 4.55:1 (min 3.0), dV 0.61 -> FAIL
+    EMBLEM CHECK: FAIL (look=echo_base@far1080, 0/2 emblems)
+    (strict glyph check above is informational at this distance; the far metric decides)
+    FAR CHECK echo_base@far1080 chest: outline pixels 20, strict amber 14 (70%), contrast 5.10:1 vs garment n=180 -> PASS
+    FAR CHECK echo_base@far1080 shoulder: outline pixels 13, strict amber 4 (31%), contrast 5.44:1 vs garment n=133 -> FAIL (informational)
+    FAR CHECK: PASS (look=echo_base@far1080, required chest)
+== run farsh_echo_base (exit 0): llvmpipe (LLVM 20.1.2, 256 bits)
+DETECTOR PASS echo_base@far1080_shoulder: far40m_echo_base_shoulder_1080p.png colours=280 bytes=35577
+    EMBLEM CHECK echo_base@far1080_shoulder chest: facing -0.00 < 0.3 (edge-on), not checked
+    EMBLEM CHECK echo_base@far1080_shoulder shoulder: core n=253 median=#FFB23F (hue 35.9, S 0.75, V 1.00) in-tolerance 89% | surround n=220 median=#474D5C contrast 4.71:1 (min 3.0), dV 0.64 -> FAIL
+    EMBLEM CHECK: FAIL (look=echo_base@far1080_shoulder, 1/2 emblems)
+    (strict glyph check above is informational at this distance; the far metric decides)
+    FAR CHECK echo_base@far1080_shoulder chest: outline pixels 0, strict amber 0 (0%), contrast 0.00:1 vs garment n=176 -> FAIL (informational)
+    FAR CHECK echo_base@far1080_shoulder shoulder: outline pixels 22, strict amber 15 (68%), contrast 5.08:1 vs garment n=164 -> PASS
+    FAR CHECK: PASS (look=echo_base@far1080_shoulder, required shoulder)
+    (648p movie frame, informational):
+    FAR CHECK echo_base@far chest: outline pixels 7, strict amber 2 (29%), contrast 5.23:1 vs garment n=191 -> FAIL
+    FAR CHECK echo_base@far shoulder: outline pixels 4, strict amber 4 (100%), contrast 5.57:1 vs garment n=113 -> FAIL (informational)
+    FAR CHECK: FAIL (look=echo_base@far, required chest)
+== run tt_echo_highcut_ropejacket (exit 0): llvmpipe (LLVM 20.1.2, 256 bits)
+DETECTOR PASS echo_highcut_ropejacket@a000: turntable_echo_highcut_ropejacket_a000.png colours=5976 bytes=87316
+    EMBLEM CHECK echo_highcut_ropejacket@a000 chest: core n=253 median=#FFB23F (hue 35.9, S 0.75, V 1.00) in-tolerance 100% | surround n=350 median=#515963 contrast 3.95:1 (min 3.0), dV 0.61 -> PASS
+    EMBLEM CHECK echo_highcut_ropejacket@a000 shoulder: facing -0.06 < 0.3 (edge-on), not checked
+    EMBLEM CHECK: PASS (look=echo_highcut_ropejacket@a000, 2/2 emblems)
+DETECTOR PASS echo_highcut_ropejacket@a045: turntable_echo_highcut_ropejacket_a045.png colours=6145 bytes=91603
+    EMBLEM CHECK echo_highcut_ropejacket@a045 chest: core n=253 median=#FFB23F (hue 35.9, S 0.75, V 1.00) in-tolerance 100% | surround n=311 median=#555F62 contrast 3.65:1 (min 3.0), dV 0.62 -> PASS
+    EMBLEM CHECK echo_highcut_ropejacket@a045 shoulder: facing -0.73 < 0.3 (edge-on), not checked
+    EMBLEM CHECK: PASS (look=echo_highcut_ropejacket@a045, 2/2 emblems)
+DETECTOR PASS echo_highcut_ropejacket@a090: turntable_echo_highcut_ropejacket_a090.png colours=4569 bytes=63827
+DETECTOR PASS echo_highcut_ropejacket@a135: turntable_echo_highcut_ropejacket_a135.png colours=5622 bytes=88393
+DETECTOR PASS echo_highcut_ropejacket@a180: turntable_echo_highcut_ropejacket_a180.png colours=5380 bytes=83725
+DETECTOR PASS echo_highcut_ropejacket@a225: turntable_echo_highcut_ropejacket_a225.png colours=5910 bytes=90699
+DETECTOR PASS echo_highcut_ropejacket@a270: turntable_echo_highcut_ropejacket_a270.png colours=5115 bytes=64545
+    EMBLEM CHECK echo_highcut_ropejacket@a270 chest: facing -0.03 < 0.3 (edge-on), not checked
+    EMBLEM CHECK echo_highcut_ropejacket@a270 shoulder: core n=253 median=#FFB23F (hue 35.9, S 0.75, V 1.00) in-tolerance 100% | surround n=325 median=#4D5760 contrast 4.11:1 (min 3.0), dV 0.62 -> PASS
+    EMBLEM CHECK: PASS (look=echo_highcut_ropejacket@a270, 2/2 emblems)
+DETECTOR PASS echo_highcut_ropejacket@a315: turntable_echo_highcut_ropejacket_a315.png colours=6358 bytes=90827
+    EMBLEM CHECK echo_highcut_ropejacket@a315 chest: core n=253 median=#FFB23F (hue 35.9, S 0.75, V 1.00) in-tolerance 100% | surround n=380 median=#3C444B contrast 5.51:1 (min 3.0), dV 0.71 -> PASS
+    EMBLEM CHECK echo_highcut_ropejacket@a315 shoulder: core n=253 median=#FFB23F (hue 35.9, S 0.75, V 1.00) in-tolerance 100% | surround n=236 median=#666A5E contrast 3.09:1 (min 3.0), dV 0.58 -> PASS
+    EMBLEM CHECK: PASS (look=echo_highcut_ropejacket@a315, 2/2 emblems)
+DETECTOR PASS contact echo_highcut_ropejacket: contact_echo_highcut_ropejacket.png colours=10917 bytes=619050
+== run far_echo_highcut_ropejacket (exit 0): llvmpipe (LLVM 20.1.2, 256 bits)
+DETECTOR PASS echo_highcut_ropejacket@far1080: far40m_echo_highcut_ropejacket_1080p.png colours=439 bytes=37186
+DETECTOR PASS echo_highcut_ropejacket@far: far40m_echo_highcut_ropejacket_648p.png colours=231 bytes=19824
+    EMBLEM CHECK echo_highcut_ropejacket@far1080 chest: core n=253 median=#FFB23F (hue 35.9, S 0.75, V 1.00) in-tolerance 89% | surround n=227 median=#515B5E contrast 3.89:1 (min 3.0), dV 0.63 -> FAIL
+    EMBLEM CHECK echo_highcut_ropejacket@far1080 shoulder: core n=253 median=#EEA740 (hue 35.5, S 0.73, V 0.93) in-tolerance 72% | surround n=227 median=#525B57 contrast 3.42:1 (min 3.0), dV 0.58 -> FAIL
+    EMBLEM CHECK: FAIL (look=echo_highcut_ropejacket@far1080, 0/2 emblems)
+    (strict glyph check above is informational at this distance; the far metric decides)
+    FAR CHECK echo_highcut_ropejacket@far1080 chest: outline pixels 20, strict amber 14 (70%), contrast 4.28:1 vs garment n=161 -> PASS
+    FAR CHECK echo_highcut_ropejacket@far1080 shoulder: outline pixels 13, strict amber 5 (38%), contrast 4.24:1 vs garment n=121 -> FAIL (informational)
+    FAR CHECK: PASS (look=echo_highcut_ropejacket@far1080, required chest)
+== run farsh_echo_highcut_ropejacket (exit 0): llvmpipe (LLVM 20.1.2, 256 bits)
+DETECTOR PASS echo_highcut_ropejacket@far1080_shoulder: far40m_echo_highcut_ropejacket_shoulder_1080p.png colours=334 bytes=35536
+    EMBLEM CHECK echo_highcut_ropejacket@far1080_shoulder chest: facing -0.00 < 0.3 (edge-on), not checked
+    EMBLEM CHECK echo_highcut_ropejacket@far1080_shoulder shoulder: core n=253 median=#FFB23F (hue 35.9, S 0.75, V 1.00) in-tolerance 89% | surround n=177 median=#51575B contrast 4.08:1 (min 3.0), dV 0.64 -> FAIL
+    EMBLEM CHECK: FAIL (look=echo_highcut_ropejacket@far1080_shoulder, 1/2 emblems)
+    (strict glyph check above is informational at this distance; the far metric decides)
+    FAR CHECK echo_highcut_ropejacket@far1080_shoulder chest: outline pixels 0, strict amber 0 (0%), contrast 0.00:1 vs garment n=176 -> FAIL (informational)
+    FAR CHECK echo_highcut_ropejacket@far1080_shoulder shoulder: outline pixels 22, strict amber 15 (68%), contrast 4.13:1 vs garment n=129 -> PASS
+    FAR CHECK: PASS (look=echo_highcut_ropejacket@far1080_shoulder, required shoulder)
+    (648p movie frame, informational):
+    FAR CHECK echo_highcut_ropejacket@far chest: outline pixels 7, strict amber 2 (29%), contrast 4.22:1 vs garment n=174 -> FAIL
+    FAR CHECK echo_highcut_ropejacket@far shoulder: outline pixels 4, strict amber 4 (100%), contrast 4.41:1 vs garment n=105 -> FAIL (informational)
+    FAR CHECK: FAIL (look=echo_highcut_ropejacket@far, required chest)
+== run tt_echo_windrow_homestead_coat (exit 0): llvmpipe (LLVM 20.1.2, 256 bits)
+DETECTOR PASS echo_windrow_homestead_coat@a000: turntable_echo_windrow_homestead_coat_a000.png colours=4291 bytes=83163
+    EMBLEM CHECK echo_windrow_homestead_coat@a000 chest: core n=253 median=#FFB23F (hue 35.9, S 0.75, V 1.00) in-tolerance 100% | surround n=384 median=#6A5B49 contrast 3.65:1 (min 3.0), dV 0.58 -> PASS
+    EMBLEM CHECK echo_windrow_homestead_coat@a000 shoulder: facing -0.06 < 0.3 (edge-on), not checked
+    EMBLEM CHECK: PASS (look=echo_windrow_homestead_coat@a000, 2/2 emblems)
+DETECTOR PASS echo_windrow_homestead_coat@a045: turntable_echo_windrow_homestead_coat_a045.png colours=4390 bytes=87466
+    EMBLEM CHECK echo_windrow_homestead_coat@a045 chest: core n=253 median=#FFB23F (hue 35.9, S 0.75, V 1.00) in-tolerance 100% | surround n=361 median=#72614A contrast 3.32:1 (min 3.0), dV 0.55 -> PASS
+    EMBLEM CHECK echo_windrow_homestead_coat@a045 shoulder: facing -0.73 < 0.3 (edge-on), not checked
+    EMBLEM CHECK: PASS (look=echo_windrow_homestead_coat@a045, 2/2 emblems)
+DETECTOR PASS echo_windrow_homestead_coat@a090: turntable_echo_windrow_homestead_coat_a090.png colours=3130 bytes=61741
+DETECTOR PASS echo_windrow_homestead_coat@a135: turntable_echo_windrow_homestead_coat_a135.png colours=3890 bytes=83400
+DETECTOR PASS echo_windrow_homestead_coat@a180: turntable_echo_windrow_homestead_coat_a180.png colours=3787 bytes=79514
+DETECTOR PASS echo_windrow_homestead_coat@a225: turntable_echo_windrow_homestead_coat_a225.png colours=4513 bytes=85985
+DETECTOR PASS echo_windrow_homestead_coat@a270: turntable_echo_windrow_homestead_coat_a270.png colours=3974 bytes=62417
+    EMBLEM CHECK echo_windrow_homestead_coat@a270 chest: facing -0.03 < 0.3 (edge-on), not checked
+    EMBLEM CHECK echo_windrow_homestead_coat@a270 shoulder: core n=253 median=#FFB23F (hue 35.9, S 0.75, V 1.00) in-tolerance 100% | surround n=384 median=#6A5A48 contrast 3.69:1 (min 3.0), dV 0.58 -> PASS
+    EMBLEM CHECK: PASS (look=echo_windrow_homestead_coat@a270, 2/2 emblems)
+DETECTOR PASS echo_windrow_homestead_coat@a315: turntable_echo_windrow_homestead_coat_a315.png colours=4976 bytes=86484
+    EMBLEM CHECK echo_windrow_homestead_coat@a315 chest: core n=253 median=#FFB23F (hue 35.9, S 0.75, V 1.00) in-tolerance 100% | surround n=380 median=#514537 contrast 5.18:1 (min 3.0), dV 0.68 -> PASS
+    EMBLEM CHECK echo_windrow_homestead_coat@a315 shoulder: core n=253 median=#FFB23F (hue 35.9, S 0.75, V 1.00) in-tolerance 100% | surround n=275 median=#756448 contrast 3.18:1 (min 3.0), dV 0.54 -> PASS
+    EMBLEM CHECK: PASS (look=echo_windrow_homestead_coat@a315, 2/2 emblems)
+DETECTOR PASS contact echo_windrow_homestead_coat: contact_echo_windrow_homestead_coat.png colours=8979 bytes=581675
+== run far_echo_windrow_homestead_coat (exit 0): llvmpipe (LLVM 20.1.2, 256 bits)
+DETECTOR PASS echo_windrow_homestead_coat@far1080: far40m_echo_windrow_homestead_coat_1080p.png colours=390 bytes=37187
+DETECTOR PASS echo_windrow_homestead_coat@far: far40m_echo_windrow_homestead_coat_648p.png colours=227 bytes=19811
+    EMBLEM CHECK echo_windrow_homestead_coat@far1080 chest: core n=253 median=#FFB23F (hue 35.9, S 0.75, V 1.00) in-tolerance 89% | surround n=228 median=#6C5C47 contrast 3.59:1 (min 3.0), dV 0.58 -> FAIL
+    EMBLEM CHECK echo_windrow_homestead_coat@far1080 shoulder: core n=253 median=#EFA73D (hue 35.7, S 0.74, V 0.94) in-tolerance 72% | surround n=236 median=#675942 contrast 3.33:1 (min 3.0), dV 0.53 -> FAIL
+    EMBLEM CHECK: FAIL (look=echo_windrow_homestead_coat@far1080, 0/2 emblems)
+    (strict glyph check above is informational at this distance; the far metric decides)
+    FAR CHECK echo_windrow_homestead_coat@far1080 chest: outline pixels 20, strict amber 14 (70%), contrast 3.79:1 vs garment n=179 -> PASS
+    FAR CHECK echo_windrow_homestead_coat@far1080 shoulder: outline pixels 13, strict amber 5 (38%), contrast 4.03:1 vs garment n=133 -> FAIL (informational)
+    FAR CHECK: PASS (look=echo_windrow_homestead_coat@far1080, required chest)
+== run farsh_echo_windrow_homestead_coat (exit 0): llvmpipe (LLVM 20.1.2, 256 bits)
+DETECTOR PASS echo_windrow_homestead_coat@far1080_shoulder: far40m_echo_windrow_homestead_coat_shoulder_1080p.png colours=310 bytes=35532
+    EMBLEM CHECK echo_windrow_homestead_coat@far1080_shoulder chest: facing -0.00 < 0.3 (edge-on), not checked
+    EMBLEM CHECK echo_windrow_homestead_coat@far1080_shoulder shoulder: core n=253 median=#FFB23F (hue 35.9, S 0.75, V 1.00) in-tolerance 89% | surround n=200 median=#695846 contrast 3.79:1 (min 3.0), dV 0.59 -> FAIL
+    EMBLEM CHECK: FAIL (look=echo_windrow_homestead_coat@far1080_shoulder, 1/2 emblems)
+    (strict glyph check above is informational at this distance; the far metric decides)
+    FAR CHECK echo_windrow_homestead_coat@far1080_shoulder chest: outline pixels 0, strict amber 0 (0%), contrast 0.00:1 vs garment n=176 -> FAIL (informational)
+    FAR CHECK echo_windrow_homestead_coat@far1080_shoulder shoulder: outline pixels 22, strict amber 16 (73%), contrast 3.82:1 vs garment n=164 -> PASS
+    FAR CHECK: PASS (look=echo_windrow_homestead_coat@far1080_shoulder, required shoulder)
+    (648p movie frame, informational):
+    FAR CHECK echo_windrow_homestead_coat@far chest: outline pixels 7, strict amber 2 (29%), contrast 3.93:1 vs garment n=191 -> FAIL
+    FAR CHECK echo_windrow_homestead_coat@far shoulder: outline pixels 4, strict amber 4 (100%), contrast 4.07:1 vs garment n=113 -> FAIL (informational)
+    FAR CHECK: FAIL (look=echo_windrow_homestead_coat@far, required chest)
+== run tt_echo_quire_binders_apron (exit 0): llvmpipe (LLVM 20.1.2, 256 bits)
+DETECTOR PASS echo_quire_binders_apron@a000: turntable_echo_quire_binders_apron_a000.png colours=2802 bytes=83066
+    EMBLEM CHECK echo_quire_binders_apron@a000 chest: core n=253 median=#FFB23F (hue 35.9, S 0.75, V 1.00) in-tolerance 100% | surround n=384 median=#5C4D48 contrast 4.48:1 (min 3.0), dV 0.64 -> PASS
+    EMBLEM CHECK echo_quire_binders_apron@a000 shoulder: facing -0.06 < 0.3 (edge-on), not checked
+    EMBLEM CHECK: PASS (look=echo_quire_binders_apron@a000, 2/2 emblems)
+DETECTOR PASS echo_quire_binders_apron@a045: turntable_echo_quire_binders_apron_a045.png colours=2721 bytes=88338
+    EMBLEM CHECK echo_quire_binders_apron@a045 chest: core n=253 median=#FFB23F (hue 35.9, S 0.75, V 1.00) in-tolerance 100% | surround n=364 median=#614F44 contrast 4.31:1 (min 3.0), dV 0.62 -> PASS
+    EMBLEM CHECK echo_quire_binders_apron@a045 shoulder: facing -0.73 < 0.3 (edge-on), not checked
+    EMBLEM CHECK: PASS (look=echo_quire_binders_apron@a045, 2/2 emblems)
+DETECTOR PASS echo_quire_binders_apron@a090: turntable_echo_quire_binders_apron_a090.png colours=2154 bytes=60187
+DETECTOR PASS echo_quire_binders_apron@a135: turntable_echo_quire_binders_apron_a135.png colours=2395 bytes=83584
+DETECTOR PASS echo_quire_binders_apron@a180: turntable_echo_quire_binders_apron_a180.png colours=2201 bytes=77586
+DETECTOR PASS echo_quire_binders_apron@a225: turntable_echo_quire_binders_apron_a225.png colours=2787 bytes=86963
+DETECTOR PASS echo_quire_binders_apron@a270: turntable_echo_quire_binders_apron_a270.png colours=2700 bytes=61825
+    EMBLEM CHECK echo_quire_binders_apron@a270 chest: facing -0.03 < 0.3 (edge-on), not checked
+    EMBLEM CHECK echo_quire_binders_apron@a270 shoulder: core n=253 median=#FFB23F (hue 35.9, S 0.75, V 1.00) in-tolerance 100% | surround n=384 median=#5C4C46 contrast 4.54:1 (min 3.0), dV 0.64 -> PASS
+    EMBLEM CHECK: PASS (look=echo_quire_binders_apron@a270, 2/2 emblems)
+DETECTOR PASS echo_quire_binders_apron@a315: turntable_echo_quire_binders_apron_a315.png colours=3330 bytes=87138
+    EMBLEM CHECK echo_quire_binders_apron@a315 chest: core n=253 median=#FFB23F (hue 35.9, S 0.75, V 1.00) in-tolerance 100% | surround n=380 median=#413531 contrast 6.57:1 (min 3.0), dV 0.75 -> PASS
+    EMBLEM CHECK echo_quire_binders_apron@a315 shoulder: core n=253 median=#FFB23F (hue 35.9, S 0.75, V 1.00) in-tolerance 100% | surround n=276 median=#665544 contrast 3.97:1 (min 3.0), dV 0.60 -> PASS
+    EMBLEM CHECK: PASS (look=echo_quire_binders_apron@a315, 2/2 emblems)
+DETECTOR PASS contact echo_quire_binders_apron: contact_echo_quire_binders_apron.png colours=6218 bytes=577870
+== run far_echo_quire_binders_apron (exit 0): llvmpipe (LLVM 20.1.2, 256 bits)
+DETECTOR PASS echo_quire_binders_apron@far1080: far40m_echo_quire_binders_apron_1080p.png colours=370 bytes=37248
+DETECTOR PASS echo_quire_binders_apron@far: far40m_echo_quire_binders_apron_648p.png colours=216 bytes=19826
+    EMBLEM CHECK echo_quire_binders_apron@far1080 chest: core n=253 median=#FFB23F (hue 35.9, S 0.75, V 1.00) in-tolerance 89% | surround n=228 median=#5D4D42 contrast 4.49:1 (min 3.0), dV 0.64 -> FAIL
+    EMBLEM CHECK echo_quire_binders_apron@far1080 shoulder: core n=253 median=#EEA73C (hue 36.1, S 0.75, V 0.93) in-tolerance 72% | surround n=236 median=#5D4F3D contrast 3.86:1 (min 3.0), dV 0.57 -> FAIL
+    EMBLEM CHECK: FAIL (look=echo_quire_binders_apron@far1080, 0/2 emblems)
+    (strict glyph check above is informational at this distance; the far metric decides)
+    FAR CHECK echo_quire_binders_apron@far1080 chest: outline pixels 20, strict amber 14 (70%), contrast 4.83:1 vs garment n=179 -> PASS
+    FAR CHECK echo_quire_binders_apron@far1080 shoulder: outline pixels 13, strict amber 5 (38%), contrast 4.83:1 vs garment n=133 -> FAIL (informational)
+    FAR CHECK: PASS (look=echo_quire_binders_apron@far1080, required chest)
+== run farsh_echo_quire_binders_apron (exit 0): llvmpipe (LLVM 20.1.2, 256 bits)
+DETECTOR PASS echo_quire_binders_apron@far1080_shoulder: far40m_echo_quire_binders_apron_shoulder_1080p.png colours=299 bytes=35568
+    EMBLEM CHECK echo_quire_binders_apron@far1080_shoulder chest: facing -0.00 < 0.3 (edge-on), not checked
+    EMBLEM CHECK echo_quire_binders_apron@far1080_shoulder shoulder: core n=253 median=#FFB23F (hue 35.9, S 0.75, V 1.00) in-tolerance 89% | surround n=200 median=#5C4C43 contrast 4.55:1 (min 3.0), dV 0.64 -> FAIL
+    EMBLEM CHECK: FAIL (look=echo_quire_binders_apron@far1080_shoulder, 1/2 emblems)
+    (strict glyph check above is informational at this distance; the far metric decides)
+    FAR CHECK echo_quire_binders_apron@far1080_shoulder chest: outline pixels 0, strict amber 0 (0%), contrast 0.00:1 vs garment n=176 -> FAIL (informational)
+    FAR CHECK echo_quire_binders_apron@far1080_shoulder shoulder: outline pixels 22, strict amber 16 (73%), contrast 4.46:1 vs garment n=164 -> PASS
+    FAR CHECK: PASS (look=echo_quire_binders_apron@far1080_shoulder, required shoulder)
+    (648p movie frame, informational):
+    FAR CHECK echo_quire_binders_apron@far chest: outline pixels 7, strict amber 2 (29%), contrast 5.07:1 vs garment n=191 -> FAIL
+    FAR CHECK echo_quire_binders_apron@far shoulder: outline pixels 4, strict amber 4 (100%), contrast 5.42:1 vs garment n=113 -> FAIL (informational)
+    FAR CHECK: FAIL (look=echo_quire_binders_apron@far, required chest)
+DETECTOR PASS contact all looks: contact_all_looks.png colours=29059 bytes=2077349
+== run fp_lantern_rifle (exit 0): llvmpipe (LLVM 20.1.2, 256 bits)
+DETECTOR PASS fp lantern_rifle: fp_lantern_rifle.png colours=1970 bytes=53561
+    EMBLEM CHECK echo_base@fp_lantern_rifle wrist: core n=253 median=#FFB23F (hue 35.9, S 0.75, V 1.00) in-tolerance 100% | surround n=329 median=#282F3D contrast 7.47:1 (min 3.0), dV 0.76 -> PASS
+    EMBLEM CHECK echo_base@fp_lantern_rifle chest: core n=253 median=#FFB23F (hue 35.9, S 0.75, V 1.00) in-tolerance 100% | surround n=338 median=#4B5466 contrast 4.24:1 (min 3.0), dV 0.60 -> PASS
+    EMBLEM CHECK echo_base@fp_lantern_rifle shoulder: facing -0.22 < 0.3 (edge-on), not checked
+    EMBLEM CHECK: PASS (look=echo_base@fp_lantern_rifle, 3/3 emblems)
+    MARGIN CHECK echo_base@fp_lantern_rifle wrist: centre (670, 533) in 1152x648, radius 22.5 px, closest edge bottom 97.4 px -> PASS
+    MARGIN CHECK: PASS (look=echo_base@fp_lantern_rifle, slots wrist)
+== run fp_breaker_mortar (exit 0): llvmpipe (LLVM 20.1.2, 256 bits)
+DETECTOR PASS fp breaker_mortar: fp_breaker_mortar.png colours=2441 bytes=62900
+    EMBLEM CHECK echo_base@fp_breaker_mortar wrist: core n=253 median=#FFB23F (hue 35.9, S 0.75, V 1.00) in-tolerance 100% | surround n=324 median=#3D465B contrast 5.25:1 (min 3.0), dV 0.64 -> PASS
+    EMBLEM CHECK echo_base@fp_breaker_mortar chest: core n=253 median=#FFB23F (hue 35.9, S 0.75, V 1.00) in-tolerance 100% | surround n=338 median=#4B5466 contrast 4.24:1 (min 3.0), dV 0.60 -> PASS
+    EMBLEM CHECK echo_base@fp_breaker_mortar shoulder: facing -0.22 < 0.3 (edge-on), not checked
+    EMBLEM CHECK: PASS (look=echo_base@fp_breaker_mortar, 3/3 emblems)
+    MARGIN CHECK echo_base@fp_breaker_mortar wrist: centre (675, 529) in 1152x648, radius 29.5 px, closest edge bottom 96.4 px -> PASS
+    MARGIN CHECK: PASS (look=echo_base@fp_breaker_mortar, slots wrist)
+== run tps (exit 0): llvmpipe (LLVM 20.1.2, 256 bits)
+TPS boom_length=3.00 camera_distance=3.00
+DETECTOR PASS tps back: tps_back.png colours=1390 bytes=58954
+DETECTOR PASS tps turned: tps_turned.png colours=1906 bytes=63953
+    EMBLEM CHECK echo_base@tps_turned chest: core n=253 median=#FFB23F (hue 35.9, S 0.75, V 1.00) in-tolerance 100% | surround n=378 median=#495266 contrast 4.36:1 (min 3.0), dV 0.60 -> PASS
+    EMBLEM CHECK echo_base@tps_turned shoulder: facing -0.35 < 0.3 (edge-on), not checked
+    EMBLEM CHECK: PASS (look=echo_base@tps_turned, 2/2 emblems)
+PNG files: 62
+SLEEPER CAPTURES: PASS
