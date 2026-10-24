@@ -1,7 +1,7 @@
 # Track H report: Epic Online Services (invites and lobbies, no port forwarding)
 
-Branch `cloud/online` from `main` (d09c6d3). Deliverable: `online.bundle` (in this folder; `git bundle create online.bundle main..cloud/online`).
-Apply on your machine: `git fetch <path>/online.bundle cloud/online:cloud/online`.
+Branch `cloud/online` from `main` (d09c6d3). Deliverable: `online_Session H.bundle` (in this folder; made with `git bundle create online.bundle main..cloud/online`, then renamed).
+Apply on your machine: `git fetch "<path>/online_Session H.bundle" cloud/online:cloud/online` (keep the quotes: the name has a space).
 
 ## Summary
 - **H1 login:** done in code. The `Online` autoload signs in with EOS Connect + Device ID (no Epic account needed), using a display name.
@@ -25,7 +25,7 @@ Apply on your machine: `git fetch <path>/online.bundle cloud/online:cloud/online
 | Track H tests | `godot --headless --path . --script res://tests/runner.gd -- --filter=online`: `RESULT: PASS (40 passed, 0 failed)` |
 | H1 in the cloud | `eos_smoke.sh login` with a dummy secret reaches the SDK: platform created, then the Device ID call returns `[NoConnection]` after 15 s. The network policy blocks `api.epicgames.dev` |
 | Plugin | EOSG main@9869720 (2.3.1 plus lobby and crash fixes) built from source against your EOS SDK 1.19.2 zips. Linux .so loads in Godot 4.7.2. Windows .dll checked statically: entry symbol exported, all 550 EOS imports resolve, and it depends only on system DLLs plus the EOS DLL |
-| H4 captures | `captures/`: 5 states × 1920x1080 and 1280x800, rendered on llvmpipe, 644–1316 colours each (`game/ui/online/dev/capture.sh`) |
+| H4 captures | `captures/` (`online_<state>_<size>_Session H.png`): 5 states × 1920x1080 and 1280x800, rendered on llvmpipe, 644–1316 colours each (`game/ui/online/dev/capture.sh`) |
 | Secret | `git log -p main..cloud/online` contains only `PASTE_CLIENT_SECRET_HERE` and a test value `"fake"`. `game/online/.gitignore` ignores `eos_credentials.local.cfg`. I never asked for or held the real secret |
 
 ## Findings worth knowing
@@ -34,7 +34,7 @@ Apply on your machine: `git fetch <path>/online.bundle cloud/online:cloud/online
 3. **The cloud can't reach Epic.** Every real-EOS step needs your PC.
 
 ## What needs your PC (about 5 minutes)
-1. Apply the bundle: `git fetch <path>/online.bundle cloud/online:cloud/online && git checkout cloud/online`.
+1. Apply the bundle: `git fetch "<path>/online_Session H.bundle" cloud/online:cloud/online && git checkout cloud/online`.
 2. Copy `game/online/eos_credentials.example.cfg` to `eos_credentials.local.cfg` and paste the client secret. The file is git-ignored.
 3. Run `godot --headless --path . --import`.
 4. Run `game\online\dev\eos_smoke.cmd login`. Expect `EOS login OK <ProductUserId>`.
